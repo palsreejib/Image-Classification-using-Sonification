@@ -1,6 +1,6 @@
 # Image-Classification-using-Sonification
 
-This project explores a novel approach to evaluating the retention of visual information in sonified images by transforming images into audio using the **inverse Griffin-Lim algorithm**, converting the resulting audio into **spectrograms**, and then classifying these spectrograms using **deep CNN architectures**.
+This project explores a novel approach to evaluating the retention of visual information in sonified images by transforming images into audio using the **inverse Griffin-Lim algorithm**, converting the resulting audio into **spectrograms**, and then classifying these spectrograms using **deep convolutional neural network (CNN) architectures**.
 
 ---
 
@@ -20,10 +20,10 @@ The full pipeline for this project is structured as follows:
 
 1. **Image Dataset Preparation**  
    Multiple datasets with different class complexities:
-   - **2, 4, 10, and 15-class subsets** were created for thorough evaluation.
+   - **2-, 4-, 10-, and 15-class subsets** were created for thorough evaluation.
 
 2. **Sonification via Inverse Griffin-Lim Algorithm**  
-   - Each image is transformed into a phase-less spectrogram using image-to-frequency mapping.
+   - Each image is transformed into a phaseless spectrogram using image-to-frequency mapping.
    - The **inverse Griffin-Lim algorithm** is used to generate time-domain audio from this spectrogram.
 
 3. **Spectrogram Generation**  
@@ -67,6 +67,7 @@ The full pipeline for this project is structured as follows:
 ---
 
 ## Project Structure
-* refer to `/nobooks` folder for code for all 5 model
-* refer to `/utilities-notebook` for code for image sonification using Griffin-Lim algo and code for spectrogram representation of generated audio `.wav` files
+* refer to `/nobooks` folder for code for all 5 models
+* refer to `/utilities-notebook` for code for image sonification using the Griffin-Lim algorithm and code for spectrogram representation of generated audio `.wav` files
+* refer to `/data/vehicle_spectrogram` for the 4 class dataset of generated spectrograms from the sonified images
 
